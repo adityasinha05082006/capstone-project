@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f4f7fb;
+  color: #132238;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eff6ff, #f9fbff);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.task-form {
+  display: grid;
+  gap: 0.8rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.task-form input,
+.task-form textarea {
+  border: 1px solid #dbe4f0;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.task-form button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.task-section {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5ecf6;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.task-item.done {
+  background: #f2fdf6;
+}
+
+.task-item h3 {
+  margin: 0 0 0.25rem;
+}
+
+.task-item p {
+  margin: 0;
+  color: #64748b;
+}
